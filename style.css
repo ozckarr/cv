@@ -14,31 +14,143 @@ body {
 main {
     width: 18rem;
     background-color: #ffffff;
-    border: #000000 solid 0.1rem;
+    border: #000000 solid 0.2rem;
     margin: 1rem auto;
     padding: 1.2rem;
 }
-
+/*
 p {
     border: #000000 solid 0.1rem;
     background-image: url('./images/background.png');
     background-repeat: repeat;
     background-size: 0.2rem;
+}*/
+
+.box{
+    margin: auto;
+    width: 16rem;
 }
+
+.box img{
+    border: #000000 solid 0.2rem;
+    width: 16rem;
+    object-fit: contain;
+    margin: auto;
+}
+
+.boxOskarLogo {
+    grid-area: boxOskarLogo;
+    border: #000000 solid 0.1rem;
+    background-image: url('./images/background.png');
+    background-repeat: repeat;
+    background-size: 0.2rem;
+    width: 16rem;
+    height: 3rem;
+}
+
+.boxOskarLogo img{
+    height: 2.3rem;
+    border: none;
+}
+
+
+.boxKuritorn{
+    grid-area: boxKuritorn;
+}
+.boxAlingsas{
+    grid-area: boxAlingsas;
+}
+.boxRimlikt{
+    grid-area: boxRimlikt;
+}
+.boxVilsekomna{
+    grid-area: boxVilsekomna;
+}
+.boxPotatamon{
+    grid-area: boxPotatamon;
+}
+.boxLjudbok{
+    grid-area: boxLjudbok;
+}
+
+.gridStructure{
+    display: grid;
+    grid-template-areas: 
+    "boxOskarLogo"
+    "boxKuritorn"
+    "boxAlingsas" 
+    "boxRimlikt" 
+    "boxVilsekomna"
+    "boxPotatamon"
+    "boxLjudbok"
+    ;
+    gap: 1rem;
+}
+
+
 
 
 @media(min-width: 48rem){
     main {
         width: 46rem;
     }
+    
+/* The box and box img need a witdh for margin:auto to work*/
+    .box{
+        width: 44rem
+    }
+
+    .box img{
+        width: 44rem
+    }
 }
+
 @media(min-width: 62rem){
     main {
+        width: 60rem;
+    }
+    .box {
+        width: 28.5rem
+    }
+    .box img{
+        width: 28.5rem
+    }
+
+    .gridStructure{
+        display: grid;
+        grid-template-areas: 
+        "boxOskarLogo boxOskarLogo"
+        "boxKuritorn boxAlingsas"
+        "boxRimlikt boxVilsekomna" 
+        "boxPotatamon boxLjudbok"
+        ;
+    }
+
+    .boxOskarLogo {
         width: 60rem;
     }
 }
 @media(min-width: 75rem){
     main {
+        width: 73rem;
+    }
+    .box {
+        width: 23rem
+    }
+    .box img{
+        width: 23rem
+    }
+
+    .gridStructure{
+        display: grid;
+        grid-template-areas: 
+        "boxOskarLogo boxOskarLogo boxOskarLogo"
+        "boxKuritorn boxAlingsas boxRimlikt"
+        "boxPotatamon boxVilsekomna boxLjudbok"
+        ;
+    }
+
+    .boxOskarLogo {
         width: 73rem;
     }
 }
