@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Kalam', cursive;
-
+    line-height: 1.5;
 }
 
 body {
@@ -18,29 +18,22 @@ main {
     margin: 1rem auto;
     padding: 1.2rem;
 }
-/*
-p {
-    border: #000000 solid 0.1rem;
-    background-image: url('./images/background.png');
-    background-repeat: repeat;
-    background-size: 0.2rem;
-}*/
+
 
 .box{
     margin: auto;
-    width: 16rem;
-}
-
-.box img{
     border: #000000 solid 0.2rem;
     width: 16rem;
-    object-fit: contain;
-    margin: auto;
+    height: 11rem;
+    background-size: 16rem;
+    object-fit: cover;
 }
 
-.boxOskarLogo {
+
+.boxOskarLogo, .boxProjekt {
+    margin: auto;
     grid-area: boxOskarLogo;
-    border: #000000 solid 0.1rem;
+    border: #000000 solid 0.2rem;
     background-image: url('./images/background.png');
     background-repeat: repeat;
     background-size: 0.2rem;
@@ -49,34 +42,85 @@ p {
 }
 
 .boxOskarLogo img{
-    height: 2.3rem;
-    border: none;
+    height: 2.5rem;
+    margin: 0.3rem;
 }
 
+.boxProjekt img{
+    height: 2.5rem;
+    width: 10rem;
+    margin: 0.3rem;
+}
+
+.textbox{
+    position: relative;
+    border: #000000 solid 0.2rem;
+    background-image: url('./images/background.png');
+    background-repeat: repeat;
+    background-size: 0.2rem;
+    padding: 0.5rem;
+    top: 5%;
+    right: -5%;
+    width: 45%;
+}
+
+.boxOskarLogo{
+    grid-area: boxOskarLogo;
+}
+
+.boxKontakt{
+    grid-area: boxKontakt;
+    background-image: url('./images/background.png');
+}
+.boxOmMig{
+    grid-area: boxOmMig;
+    background-image: url('./images/background.png');
+}
+
+.boxBild{
+    grid-area: boxBild;
+    background-image: url('./images/bildOskar.jpg');
+    display: none;
+}
+
+.boxProjekt{
+    grid-area: boxProjekt;
+}
 
 .boxKuritorn{
     grid-area: boxKuritorn;
+    background-image: url('./images/kuritorn.jpg');
 }
+
 .boxAlingsas{
     grid-area: boxAlingsas;
+    background-image: url('./images/alingsas.jpg');
 }
 .boxRimlikt{
     grid-area: boxRimlikt;
+    background-image: url('./images/rimlikt.jpg');
 }
 .boxVilsekomna{
     grid-area: boxVilsekomna;
+    background-image: url('./images/vilsekomna.jpg');
 }
 .boxPotatamon{
     grid-area: boxPotatamon;
+    background-image: url('./images/potatamon.jpg');
 }
 .boxLjudbok{
     grid-area: boxLjudbok;
+    background-image: url('./images/ljudbok.jpg');
 }
 
 .gridStructure{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "boxOskarLogo"
+    "boxKontakt"
+    "boxOmMig"
+    "boxBild"
+    "boxProjekt"
     "boxKuritorn"
     "boxAlingsas" 
     "boxRimlikt" 
@@ -87,7 +131,23 @@ p {
     gap: 1rem;
 }
 
-
+#upButton{
+    display: none;
+    position: fixed;
+    bottom: 3%;
+    width: 3rem;
+    height: 3rem;
+    z-index: 99;
+    cursor: pointer;
+    background-image: url('./images/background.png');
+    background-repeat: repeat;
+    background-size: 0.2rem;
+    border-radius: 3rem;
+    text-align: center;
+    align-content: center;
+    font-size: 2.2rem;
+    border: #000000 solid 0.2rem;
+}
 
 
 @media(min-width: 48rem){
@@ -95,13 +155,56 @@ p {
         width: 46rem;
     }
     
-/* The box and box img need a witdh for margin:auto to work*/
     .box{
-        width: 44rem
+        width: 44rem;
+        height: 30rem;
+        background-size: 44rem;
     }
 
-    .box img{
-        width: 44rem
+    .boxOskarLogo, .boxProjekt {
+        width: 44rem;
+        height: 6rem;
+    }
+    .boxOskarLogo img{
+        width: 43rem;
+        height: 5rem;
+    }
+    .boxProjekt img{
+        width: 25rem;
+        height: 5rem;
+    }
+
+    .textbox{
+        width: 30%;
+    }
+
+    .boxBild{
+        display: block;
+    }
+
+    .boxKontakt, .boxBild{
+        width: 20.6rem;
+    }
+    .boxBild{
+        background-image: url('./images/bildOskar2.jpg');
+        background-size: 22rem;
+    }
+
+    .gridStructure{
+        display: grid;
+        grid-template-areas:
+        "boxOskarLogo boxOskarLogo"
+        "boxOmMig boxOmMig"
+        "boxKontakt boxBild"
+        "boxProjekt boxProjekt"
+        "boxKuritorn boxKuritorn"
+        "boxAlingsas boxAlingsas" 
+        "boxRimlikt boxRimlikt" 
+        "boxVilsekomna boxVilsekomna"
+        "boxPotatamon boxPotatamon"
+        "boxLjudbok boxLjudbok"
+        ;
+        gap: 1rem;
     }
 }
 
@@ -110,47 +213,78 @@ p {
         width: 60rem;
     }
     .box {
-        width: 28.5rem
+        width: 28.5rem;
+        height: 19rem;
+        background-size: 28.5rem;
     }
-    .box img{
-        width: 28.5rem
-    }
+
 
     .gridStructure{
         display: grid;
         grid-template-areas: 
         "boxOskarLogo boxOskarLogo"
+        "boxOmMig boxBild"
+        "boxOmMig boxKontakt"
+        "boxProjekt boxProjekt"
         "boxKuritorn boxAlingsas"
         "boxRimlikt boxVilsekomna" 
         "boxPotatamon boxLjudbok"
         ;
     }
 
-    .boxOskarLogo {
-        width: 60rem;
+    .boxOskarLogo, .boxProjekt {
+        width: 59rem;
+    }
+
+    .boxOskarLogo img{
+        position: relative;
+        top: 0.5rem;
+        left: 2rem;
+    }
+
+    .boxProjekt img{
+        position: relative;
+        top: 0.5rem;
+        left: 2rem;
+    }
+
+    .textbox{
+        width: 43%;
+    }
+    .boxBild{
+        background-image: url('./images/bildOskar.jpg');
     }
 }
+
+
 @media(min-width: 75rem){
     main {
         width: 73rem;
     }
     .box {
-        width: 23rem
-    }
-    .box img{
-        width: 23rem
+        width: 23rem;
+        height: 16rem;
+        background-size: 23rem;
     }
 
     .gridStructure{
         display: grid;
         grid-template-areas: 
         "boxOskarLogo boxOskarLogo boxOskarLogo"
+        "boxKontakt boxOmMig boxBild"
+        " boxProjekt boxProjekt boxProjekt"
         "boxKuritorn boxAlingsas boxRimlikt"
         "boxPotatamon boxVilsekomna boxLjudbok"
         ;
     }
 
-    .boxOskarLogo {
-        width: 73rem;
+    .boxOskarLogo, .boxProjekt{
+        width: 72rem;
+    }
+    .textbox{
+        width: 39%;
+    }
+    .boxBild{
+        background-size: 24rem;
     }
 }
