@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="lightbox.css">
     <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b70b066959.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
     <script defer src="script.js" type="text/javascript"></script>
     <title>Oskar CV</title>
 </head>
 <body>
     <main>
-        <div id="lightboxBackground" onclick="lightboxOff()">
-        </div>
         
         <div class="gridStructure">
             <div class="boxOskarLogo">
@@ -35,7 +34,7 @@
                 <img src="images/projekt.png" alt="boxProjekt">
             </div>
             
-            <div class="box imageBox boxKuritorn" onclick="lightboxOn()">
+            <div class="box imageBox boxKuritorn" onclick="lightboxKuritorn()">
                 <div class="textbox">
                     <h3>Kuritorn</h3>
                     <p>Förbättrade hållplatser <i class="fas fa-angle-right"></i></p>
@@ -77,14 +76,68 @@
             </div>
         </div>
 
-        <div class="kuritornLightbox lightboxStyle">
+        <div class="lightboxStyle" id="kuritornLightbox">
             <div class="centerLightboxContent">
                 <iframe class="youtube" src="https://www.youtube.com/embed/AFwevamZPQU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="lightboxOffButton" onclick="lightboxOff()"><i class="fas fa-times"></i></div>
                 <p>Koncept för att få folk att tala i busskurer, alternativt ha något att tala om senare. Konceptet testades med lyckat resultat.</p>
             </div>
         </div>
+        <div id="lightboxBackground" onclick="lightboxOff()">
+            </div>
+        <div class="alingsasLightbox lightboxStyle">
+                <div class="centerLightboxContent">
+                    <div class="imgAlingsasLightbox imgLightbox"></div>
+                    <div class="lightboxOffButton" onclick="lightboxOff()"><i class="fas fa-times"></i></div>
+                    <p>Design och demo för ett responsivt <a href="https://www.alingsas.se/">Alingsas.se</a>. Även uppdaterade menyer för bättre synlighet. <br> 
+                        <br> ("Barn och ungdom" har den enda klickbara länken)  
+                        <br> Arbetet utfördes tillsammans med Alexander Bryngelson.</p>
+                    <a href="https://ozckarr.github.io/Alingsas/"><div class="lightboxButton"><p>Länk</p></div></a>
+                    <a href="https://github.com/ozckarr/Alingsas"><div class="lightboxButton"><p>GitHub</p></div></a>
+                </div>
+        </div>
 
+        <div class="rimliktLightbox lightboxStyle">
+                <div class="centerLightboxContent">
+                    <div>
+                        <div class="lightboxOffButton" onclick="lightboxOff()"><i class="fas fa-times"></i></div>
+                        <iframe class="instagramLightboxSmall" src="//lightwidget.com/widgets/d66e43e9716c5d3097eb82f3e37bb8ed.html" scrolling="no" allowtransparency="true" class="lightwidget-widget"></iframe>
+                        <iframe class="instagramLightboxLarge" src="//lightwidget.com/widgets/eae4e7b1f6ce56f0abac30f026f82b2a.html" scrolling="no" allowtransparency="true" class="lightwidget-widget"></iframe>
+                    </div>
+                    <p>För att hålla kreativiteten i trim <br> Så har jag en fiktiv "blogg" med allt på rim</p>
+                    <a href="https://www.instagram.com/rimlikt/"><div class="lightboxButton"><p>Länk</p></div></a>
+                </div>
+        </div>
+
+        <div class="vilsekomnaLightbox lightboxStyle">
+            <div class="centerLightboxContent">
+                <iframe class="youtube" src="https://www.youtube.com/embed/5XZhrAj9rtA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="lightboxOffButton" onclick="lightboxOff()"><i class="fas fa-times"></i></div>
+                <p>I detta skolarbete skulle ickeplatser uppmärksammas med en mobilapp. Ickeplatser förklaras kvickas som stadens mellanrum. Det ska tillläggas att detta skedde en månad innan någon visste något om Pokémon Go. Vi valde upplägget då AR-spel utbudet var obruten mark.
+                    <br> Arbetet utfördes tillsammans med Emilia Skoog, Hanna Eliasson och Géza Ribberström Palyi.</p>
+            </div>
+        </div>
+        
+        <div class="potatomonLightbox lightboxStyle">
+                <div class="centerLightboxContent">
+                    <div class="imgPotatomonLightbox imgLightbox"></div>
+                    <div class="lightboxOffButton" onclick="lightboxOff()"><i class="fas fa-times"></i></div>
+                    <p>Textbaserat äventyr om potatis. Involverar en hel del trams. Svaren måste ske i text, då övningen var att hantera felaktig input. Jag valde att göra det på många olika vis.</p>
+                    <a href="https://ozckarr.github.io/Potatomon/"><div class="lightboxButton"><p>Länk</p></div></a>
+                    <a href="https://github.com/ozckarr/Potatomon"><div class="lightboxButton"><p>GitHub</p></div></a>
+                </div>
+        </div>
+
+        <div class="ljudbokLightbox lightboxStyle">
+                <div class="centerLightboxContent">
+                    <div class="imgLjudbokLightbox imgLightbox"></div>
+                    <div class="lightboxOffButton" onclick="lightboxOff()"><i class="fas fa-times"></i></div>
+                    <p>Uppgiften var att rätta till ljudboksspelares snabbspolingknapp via fjärrkontroll som hoppar i kapitel vilket gör det svårt att hitta tillbaka om man kommer åt den. Här är tre förslag. <br> <br>
+                        <b>1:</b> Ändra kapitelhopp till 15-sekunders hopp så att man fortfarande kan manövrera. <br>
+                        <b>2:</b> Snabbspolningar man så sätts ett bokmärke där hen var. Klickar man tillbaks så kommer man dit man var senast. Allt sparas sa att man även kan bokmärka utan att stanna upp.<br>
+                        <b>3:</b> Kapitelhopp måste bekräftas med ännu ett klick. Ljudboken låter utifall att man omedvetet kommit åt. </p>
+                </div>
+        </div>
         <div id="upButton" onclick="goToTheTop()"><i class="fas fa-angle-double-up"></i></div>
     </main>
 </body>

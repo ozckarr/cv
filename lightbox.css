@@ -1,0 +1,184 @@
+#lightboxBackground{
+    background-image: url('./images/backgroundLightbox.png');
+    background-repeat: repeat;
+    background-size: 1rem;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    display: none;
+}
+
+.lightboxStyle{
+    position: fixed;
+    width: 16rem;
+    height: 60%;
+    background-image: url('./images/background.png');
+    background-repeat: repeat;
+    background-size: 0.2rem;
+    top: 5rem;
+    border: #000000 solid 0.2rem;
+    padding: 1rem;
+}
+
+.lightboxOffButton{
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: -1.3rem;
+    right: -1rem;
+    background: white;
+    border: #000000 solid 0.2rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 1.65rem;
+    cursor: pointer;
+
+}
+.youtube{
+    width: 16rem;
+    height: 8rem;
+    display:block;
+}
+
+
+.centerLightboxContent p{
+    display: block;
+    /*margin: auto;*/
+    padding: 1rem 0;
+}
+
+.centerLightboxContent a{
+    color: black;
+}
+
+/*Turn off lightboxes*/
+#kuritornLightbox{
+    display: none;
+}
+
+.alingsasLightbox{
+    display: none;
+}
+
+.rimliktLightbox{
+    display: none;
+}
+
+.vilsekomnaLightbox{
+    display: none;
+}
+
+.potatomonLightbox{
+    display: none;
+}
+
+.ljudbokLightbox{
+    display: none;
+}
+
+.imgLightbox{                       /*Funkar just nu bara i alingsås*/
+    background-size: 15.6rem;
+    width: 15.6rem;
+    height: 11rem;
+    display:block;
+    object-fit: contain;
+    margin: auto;
+    border: #000000 solid 0.2rem;
+}
+
+/*Lightbox images*/
+.imgPotatomonLightbox{
+    background-image: url('./images/screen_potatomon.png');
+}
+
+.imgAlingsasLightbox{
+    background-image: url('./images/screen_alingsas.png'); 
+}
+
+.imgLjudbokLightbox{ /*Overrides imgLightbox height. Don't change the order*/
+    background-image: url('./images/screen_ljudbok.jpg');
+    height: 5rem;
+}
+
+.instagramLightboxSmall{
+    background-color: white;
+    width: 100%;
+    border: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.instagramLightboxLarge{
+    background-color: white;
+    width: 22rem;
+    border: 0;
+    overflow: hidden;
+    display: none;
+    margin: auto;
+}
+
+/*Size*/
+@media(min-width: 48rem){
+
+
+    .lightboxStyle{
+        width: 44rem;
+    }
+    
+    .lightboxOffButton{
+        height: 3rem;
+        width: 3rem;
+        position: absolute;
+        top: -1.7rem;
+        right: -1.8rem;
+        font-size: 2.4rem;
+    }
+
+    .youtube{
+        width: 35rem;
+        height: 19rem;
+        margin: auto;
+    }
+
+    .centerLightboxContent p{
+        width: 35rem;
+        margin: auto;
+    }
+
+    .imgLightbox{
+        background-size: 35rem;
+        width: 35rem;
+        height: 19rem;
+        display:block;
+        object-fit: contain;
+        margin: auto;
+    }
+
+    .instagramLightboxSmall{
+        display: none;
+    }
+    
+    .instagramLightboxLarge{
+        display: block;
+    }
+
+    .imgLjudbokLightbox{ /*Overrides imgLightbox height. Don't change the order*/
+        height: 12rem;
+    }
+
+
+}
+
+
+@media(min-width: 62rem){
+    .lightboxStyle{
+        right:18%;
+    }
+}
+
+@media(min-width: 75rem){
+    .lightboxStyle{
+        right:24%;
+    }
+}

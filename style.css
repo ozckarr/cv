@@ -27,6 +27,7 @@ main {
     height: 11rem;
     background-size: 16rem;
     object-fit: cover;
+    cursor: pointer;
 }
 
 
@@ -113,6 +114,7 @@ main {
     background-image: url('./images/ljudbok.jpg');
 }
 
+
 .gridStructure{
     display: grid;
     grid-template-areas:
@@ -131,13 +133,14 @@ main {
     gap: 1rem;
 }
 
+
 #upButton{
     display: none;
     position: fixed;
     bottom: 3%;
     width: 3rem;
     height: 3rem;
-    z-index: 99;
+    z-index: 90;
     cursor: pointer;
     background-image: url('./images/background.png');
     background-repeat: repeat;
@@ -147,6 +150,7 @@ main {
     align-content: center;
     font-size: 2.2rem;
     border: #000000 solid 0.2rem;
+    transition: 5s;
 }
 
 

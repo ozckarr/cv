@@ -19,7 +19,6 @@ const secretCode = 'potato';
 
  window.addEventListener('scroll', () => {
      const scrolledDistance = window.scrollY;
-     console.log(scrolledDistance);
     if(scrolledDistance > 150){
     document.getElementById("upButton").style.display = "block";
     } else if (scrolledDistance <= 150){
@@ -30,4 +29,22 @@ const secretCode = 'potato';
  function goToTheTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+  }
+
+  /**
+   * Lightbox control
+   */
+  let lightbox = document.getElementById("lightbox");
+
+  function lightboxOn(){
+    lightbox.style.display = 'block';
+  }
+
+  function lightboxOff(){
+    lightbox.style.display = 'none';
+  }
+
+
+  function lightboxKuritorn(){
+    document.getElementById('kuritornLightbox').style.display = 'block';
   }
