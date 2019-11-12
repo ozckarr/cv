@@ -5,18 +5,22 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    z-index: 99;
+    z-index: 80;
     display: none;
+    top:0;
+    right: 0;
+    cursor: pointer;
 }
 
 .lightboxStyle{
     position: fixed;
     width: 16rem;
-    height: 60%;
+    height: 37rem;
     background-image: url('./images/background.png');
     background-repeat: repeat;
     background-size: 0.2rem;
     top: 5rem;
+    z-index: 90;
     border: #000000 solid 0.2rem;
     padding: 1rem;
 }
@@ -33,18 +37,34 @@
     text-align: center;
     font-size: 1.65rem;
     cursor: pointer;
-
 }
+
+form{
+    margin: auto;
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form button{
+    margin: 0.5rem;
+    display: block;
+    height: 3rem;
+    border: #1ba3aa solid 0.2rem;
+    font-size: 1.3rem;
+    color: #1ba3aa;
+}
+
 .youtube{
     width: 16rem;
     height: 8rem;
-    display:block;
+    display: block;
 }
 
 
 .centerLightboxContent p{
     display: block;
-    /*margin: auto;*/
+    margin: auto;
     padding: 1rem 0;
 }
 
@@ -57,23 +77,23 @@
     display: none;
 }
 
-.alingsasLightbox{
+#alingsasLightbox{
     display: none;
 }
 
-.rimliktLightbox{
+#rimliktLightbox{
     display: none;
 }
 
-.vilsekomnaLightbox{
+#vilsekomnaLightbox{
     display: none;
 }
 
-.potatomonLightbox{
+#potatomonLightbox{
     display: none;
 }
 
-.ljudbokLightbox{
+#ljudbokLightbox{
     display: none;
 }
 
@@ -117,6 +137,8 @@
     display: none;
     margin: auto;
 }
+
+
 
 /*Size*/
 @media(min-width: 48rem){
@@ -165,6 +187,18 @@
 
     .imgLjudbokLightbox{ /*Overrides imgLightbox height. Don't change the order*/
         height: 12rem;
+    }
+
+    form{
+        flex-direction: row;
+    }
+
+    form button{
+        width: 7rem;
+    }
+
+    .aloneButton{
+        width: 14rem;
     }
 
 
