@@ -23,8 +23,7 @@ main {
     padding: 1rem;
 }
 
-.box{
-    margin: auto;
+.box, .boxKontakt, .boxOmMig, .boxBild, .boxUtbildning, .boxJobb{
     border: #000000 solid 0.2rem;
     width: 16rem;
     height: 11rem;
@@ -35,7 +34,6 @@ main {
 
 
 .boxOskarLogo, .boxProjekt {
-    margin: auto;
     border: #000000 solid 0.2rem;
     background-image: url('./images/background.png');
     background-repeat: repeat;
@@ -44,7 +42,7 @@ main {
     height: 3rem;
 }
 
-/* FANSKAP*/
+/* skit V*/
 .boxKontakt{
     width: 14rem;
     height: 14rem;
@@ -73,9 +71,8 @@ main {
 }
 
 .boxSkills{
-    margin: auto;
     border: #000000 solid 0.2rem;
-    background-image: url('./images/background.png');
+    background-image: url('./images/background-02.png');
     background-repeat: repeat;
     background-size: 0.2rem;
     height: 3rem;
@@ -110,18 +107,23 @@ main {
 
 .boxJobb{
     width: 14rem;
-    height: 24rem;
-    background-image: url('./images/background.png');
+    height: 27rem;
+    background-image: url('./images/background-02.png');
     background-repeat: repeat;
-    background-size: 0.1rem;
+    background-size: 0.3rem;
+    font-size: 1rem;
+}
+
+.boxJobb b{
+    font-size: 1.1rem;
 }
 
 .boxJobbbackground{
     background-image: url('./images/bubble_bang.png');
     background-repeat: no-repeat;
-    background-size: 14rem 24rem;
+    background-size: 14rem 26rem;
 }
-/* FANSKAP*/
+/* upp */
 
 .boxOskarLogo img{
     height: 2.5rem;
@@ -225,6 +227,7 @@ main {
     "boxBild"
     ;
     gap: 1rem;
+    justify-items: center;
 }
 
 
@@ -247,149 +250,3 @@ main {
     transition: 5s;
 }
 
-
-@media(min-width: 48rem){
-    main {
-        width: 46rem;
-    }
-    
-    .box{
-        width: 44rem;
-        height: 30rem;
-        background-size: 44rem;
-    }
-
-    .boxOskarLogo, .boxProjekt, .boxSkills {
-        width: 44rem;
-        height: 6rem;
-    }
-    .boxOskarLogo img{
-        width: 43rem;
-        height: 5rem;
-    }
-    .boxProjekt img{
-        width: 25rem;
-        height: 5rem;
-    }
-
-    .textbox{
-        width: 30%;
-    }
-
-    .boxBild{
-        display: block;
-    }
-
-    .boxKontakt, .boxBild{
-        width: 20.6rem;
-    }
-    .boxBild{
-        background-image: url('./images/bildOskar2.jpg');
-        background-size: 22rem;
-    }
-
-    .gridStructure{
-        display: grid;
-        grid-template-areas:
-        "boxOskarLogo boxOskarLogo"
-        "boxOmMig boxOmMig"
-        "boxKontakt boxBild"
-        "boxUtbildning boxJobb"
-        "boxSkills boxSkills"
-        "boxProjekt boxProjekt"
-        "boxKuritorn boxKuritorn"
-        "boxAlingsas boxAlingsas" 
-        "boxRimlikt boxRimlikt" 
-        "boxVilsekomna boxVilsekomna"
-        "boxPotatamon boxPotatamon"
-        "boxLjudbok boxLjudbok"
-        ;
-        gap: 1rem;
-    }
-}
-
-@media(min-width: 62rem){
-    main {
-        width: 60rem;
-    }
-    .box {
-        width: 28.5rem;
-        height: 19rem;
-        background-size: 28.5rem;
-    }
-
-
-    .gridStructure{
-        display: grid;
-        grid-template-areas: 
-        "boxOskarLogo boxOskarLogo"
-        "boxOmMig boxBild"
-        "boxOmMig boxKontakt"
-        "boxUtbildning boxJobb"
-        "boxSkills boxSkills"
-        "boxProjekt boxProjekt"
-        "boxKuritorn boxAlingsas"
-        "boxRimlikt boxVilsekomna" 
-        "boxPotatamon boxLjudbok"
-        ;
-    }
-
-    .boxOskarLogo, .boxProjekt, .boxSkills {
-        width: 59rem;
-    }
-
-    .boxOskarLogo img{
-        position: relative;
-        top: 0.5rem;
-        left: 2rem;
-    }
-
-    .boxProjekt img{
-        position: relative;
-        top: 0.5rem;
-        left: 2rem;
-    }
-
-    .textbox{
-        width: 43%;
-    }
-    .boxBild{
-        background-image: url('./images/bildOskar.jpg');
-    }
-}
-
-
-@media(min-width: 75rem){
-    main {
-        width: 73rem;
-    }
-    .box {
-        width: 23rem;
-        height: 16rem;
-        background-size: 23rem;
-    }
-
-    .gridStructure{
-        display: grid;
-        grid-template-areas: 
-        "boxOskarLogo boxOskarLogo boxOskarLogo"
-        "boxKontakt boxOmMig boxBild"
-        "boxUtbildning boxOmMig boxJobb"
-        "boxSkills boxSkills boxSkills"
-        "boxProjekt boxProjekt boxProjekt"
-        "boxKuritorn boxAlingsas boxRimlikt"
-        "boxPotatamon boxVilsekomna boxLjudbok"
-
-        ;
-    }
-
-    .boxOskarLogo, .boxProjekt, .boxSkills{
-        width: 72rem;
-    }
-    .textbox{
-        width: 39%;
-    }
-    .boxBild{
-        background-size: 243em;
-    }
-}
