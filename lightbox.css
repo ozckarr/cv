@@ -14,15 +14,15 @@
 
 .lightboxStyle{
     position: fixed;
-    width: 16rem;
+    width: 17rem;
     height: 37rem;
     background-image: url('./images/background.png');
     background-repeat: repeat;
     background-size: 0.2rem;
-    top: 5rem;
+    top: 1rem;
     z-index: 90;
     border: #000000 solid 0.2rem;
-    padding: 1rem;
+    padding: 1.1rem;
 }
 
 .lightboxOffButton{
