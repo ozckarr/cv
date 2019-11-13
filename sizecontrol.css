@@ -35,12 +35,25 @@
         width: 18.4rem;
     }
 
+
     .boxKontakt{
         height: 17rem;
     }
 
-    .boxKontakt .hideInMobile{
+    .boxKontakt .hideInMobile, .boxJobb .hideInMobile, .boxUtbildning .hideInMobile{
         display: block;
+    }
+
+    .buttonDownMobile{
+        display: none;
+    }
+
+    .boxUtbildning{
+        height: 14rem;
+    }
+
+    .boxJobb{
+        height: 29rem;
     }
 
     .boxOskarLogo img{
@@ -65,7 +78,7 @@
 
     .boxOmMig{
         width: 42rem;
-        height: 20rem;
+        height: 16rem;
     }
 
     .boxOmMig .hideInMobile{
@@ -74,10 +87,16 @@
 
     .boxUtbildningbackground{
         background-size: 18.5rem 12.5rem;
+        background-image: url('./images/thinkbubble.png');
+        background-repeat: no-repeat;
     }
+
     .boxJobbbackground{
         background-size: 18.5rem 27rem;
-    }
+            background-image: url('./images/bubble_bang.png');
+            background-repeat: no-repeat;
+        }
+    
     .boxKontaktbackground{
         background-size: 18.5rem 12.5rem;
         background-image: url('./images/bubble.png');
@@ -107,7 +126,7 @@
 
 }
 
-@media(min-width: 62rem){
+@media(min-width: 62rem){                           /*62rem*/
     main {
         width: 60rem;
     }
@@ -131,6 +150,10 @@
         "boxVilsekomna boxRimlikt"
         "boxLjudbok boxPotatamon"
         ;
+    }
+
+    .boxKontakt{
+        height: 17rem;
     }
 
 
@@ -170,15 +193,15 @@
 
     .boxOmMig{
         width: 57.1rem;
-        height: 16rem;
+        height: 15rem;
     }
 
     .breakrow{
         display: none;
     }
 
-    .boxJobb{
-        height: 16rem;;
+    .boxUtbildning .boxJobb{
+        height: 17rem;
     }
 
     .boxUtbildningbackground{
@@ -193,7 +216,7 @@
 }
 
 
-@media(min-width: 75rem){
+@media(min-width: 75rem){                           /*75rem*/
     main {
         width: 73rem;
     }
@@ -232,6 +255,7 @@
 
     .boxJobb{
         width: 20.5rem;
+        height: 16rem;
     }
 
     .boxSkills{
@@ -241,6 +265,8 @@
 
     .boxOmMig{
         width: 45.4rem;
+        height: 16rem;
+
     }
 
     .boxKontakt, .boxUtbildning{

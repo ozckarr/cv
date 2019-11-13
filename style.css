@@ -13,7 +13,7 @@ body {
 }
 
 main {
-    width: 18rem;
+    width: 19rem;
     background-color: #ffffff;
     border: #000000 solid 0.2rem;
     margin: 1rem auto;
@@ -88,39 +88,36 @@ main {
 
 .boxUtbildning{
     width: 14rem;
-    height: 16rem;
+    height: 1.5rem;
     background-image: url('./images/background.png');
     background-repeat: repeat;
     background-size: 0.3rem;
+}
+
+.boxUtbildning .hideInMobile{
+    display: none;
 }
 
 .boxUtbildning b{
     font-size: 1.12rem;
 }
 
-.boxUtbildningbackground{
-    background-image: url('./images/thinkbubble.png');
-    background-repeat: no-repeat;
-    background-size: 14rem 13rem;
-}
 
 .boxJobb{
     width: 14rem;
-    height: 27rem;
+    height: 1.5rem;
     background-image: url('./images/background-02.png');
     background-repeat: repeat;
     background-size: 0.3rem;
     font-size: 1rem;
 }
 
-.boxJobb b{
-    font-size: 1.1rem;
+.boxJobb .hideInMobile{
+    display: none;
 }
 
-.boxJobbbackground{
-    background-image: url('./images/bubble_bang.png');
-    background-repeat: no-repeat;
-    background-size: 14rem 26rem;
+.boxJobb b{
+    font-size: 1.1rem;
 }
 
 .boxOskarLogo img{
