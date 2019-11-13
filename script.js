@@ -15,6 +15,9 @@ const secretCode = 'potatis';
         document.getElementsByClassName("boxVilsekomna")[0].style.backgroundImage = "url('images/potatto_mode.gif')";
         document.getElementsByClassName("boxPotatamon")[0].style.backgroundImage = "url('images/potatto_mode.gif')";
         document.getElementsByClassName("boxLjudbok")[0].style.backgroundImage = "url('images/potatto_mode.gif')";
+        document.getElementsByClassName("boxJobbbackground")[0].style.backgroundImage = "url('images/potatis_still.png')";
+        document.getElementsByClassName("boxUtbildningbackground")[0].style.backgroundImage = "url('images/potatis_still.png')";
+        document.getElementsByClassName("boxKontaktbackground")[0].style.backgroundImage = "url('images/potatis_still.png')";
     }
  })
 
@@ -134,3 +137,10 @@ const secretCode = 'potatis';
     ljudbokLightbox.style.display = 'none';
     lightbox.style.display = 'none';
   }
+
+
+
+  /**Bosse banan */
+
+
+

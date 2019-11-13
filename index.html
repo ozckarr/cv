@@ -22,11 +22,13 @@
             </div>
             <div class="largetextbox boxKontakt">
                 <div class="boxKontaktbackground">
-                    <h2>Kontakt</h2>
-                    <h3>Mail</h3><p>Lindbladoskar@gmail.com</p>
-                    <h3>Telefon</h3><p>+46709-115068</p>
-                    <h3>Adress</h3><p>Paternostergatan 22 - lgh 1904<br>
-                        414 67 Göteborg</p> 
+                        <h2>Kontakt</h2>
+                    <div class="boxKontaktHiddenWhenMobile">
+                        <h3>Mail</h3><p>Lindbladoskar@gmail.com</p>
+                        <h3>Telefon</h3><p>+46709-115068</p>
+                        <h3>Adress</h3><p>Paternostergatan 22 - lgh 1904<br>
+                            414 67 Göteborg</p> 
+                    </div>
                 </div>
             </div>
             <div class="largetextbox boxOmMig">
@@ -48,12 +50,14 @@
             <div class="largetextbox boxUtbildning">
                 <div class="boxUtbildningbackground">
                     <h2>Utbildning</h2>
-                   <p><b>Gullmarsgymnasiet</b> (06–09) <br>
-                    Natur med marinbiologisk inriktning<br>
-                    <b>HKR Kristianstad</b> (14–17)<br>
-                    Digital Design - Front end med fokus på interaktion och design.<br>
-                    <b>Medieinstitutet</b> (19-21)<br>
-                    Front End Developer - Pågående</p>
+                        <div class="hiddenWhenMobile">
+                        <p><b>Gullmarsgymnasiet</b> (06–09) <br>
+                            Natur med marinbiologisk inriktning<br>
+                            <b>HKR Kristianstad</b> (14–17)<br>
+                            Digital Design - Front end med fokus på interaktion och design.<br>
+                            <b>Medieinstitutet</b> (19-21)<br>
+                            Front End Developer - Pågående</p>
+                        </div>
                 </div>
             </div>
             <div class="largetextbox boxJobb">
@@ -78,8 +82,9 @@
                 </div>
             </div>
 
-            <div class="boxProjekt">
+            <div class="boxProjekt" onclick="korv()">
                 <img src="images/projekt.png" alt="boxProjekt">
+
             </div>
             
             <div class="box boxKuritorn" onclick="lightboxKuritorOn()">

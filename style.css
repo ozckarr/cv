@@ -5,6 +5,7 @@
     line-height: 1.5;
 }
 
+
 body {
     background-image: url('./images/background.png');
     background-repeat: repeat;
@@ -29,7 +30,6 @@ main {
     height: 11rem;
     background-size: 16rem;
     object-fit: cover;
-    cursor: pointer;
 }
 
 
