@@ -42,19 +42,16 @@ main {
     height: 3.5rem;
 }
 
-/* skit V*/
 .boxKontakt{
     width: 14rem;
-    height: 14rem;
+    height: 1.5rem;
     background-image: url('./images/background.png');
     background-repeat: repeat;
     background-size: 0.15rem;
 }
 
-.boxKontaktbackground{
-    background-image: url('./images/bubble.png');
-    background-repeat: no-repeat;
-    background-size: 14rem 13rem;
+.boxKontakt .hideInMobile{
+    display: none;
 }
 
 .boxOmMig{
@@ -62,12 +59,14 @@ main {
     background-image: url('./images/background.png');
     background-repeat: repeat;
     background-size: 0.2rem;
-    height: 3rem;
+    height: 1.5rem;
     width: 14rem;
-    height: 42.5rem;
     background-image: url('./images/background.png');
     background-repeat: repeat;
     background-size: 0.27rem;
+}
+.boxOmMig .hideInMobile{
+    display: none;
 }
 
 .boxSkills{
@@ -123,7 +122,6 @@ main {
     background-repeat: no-repeat;
     background-size: 14rem 26rem;
 }
-/* upp */
 
 .boxOskarLogo img{
     height: 2.5rem;

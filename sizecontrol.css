@@ -35,6 +35,14 @@
         width: 18.4rem;
     }
 
+    .boxKontakt{
+        height: 17rem;
+    }
+
+    .boxKontakt .hideInMobile{
+        display: block;
+    }
+
     .boxOskarLogo img{
         width: 43rem;
         height: 5rem;
@@ -60,6 +68,10 @@
         height: 20rem;
     }
 
+    .boxOmMig .hideInMobile{
+        display: block;
+    }
+
     .boxUtbildningbackground{
         background-size: 18.5rem 12.5rem;
     }
@@ -68,6 +80,9 @@
     }
     .boxKontaktbackground{
         background-size: 18.5rem 12.5rem;
+        background-image: url('./images/bubble.png');
+        background-repeat: no-repeat;
+        
     }
 
 
@@ -150,7 +165,7 @@
     }
 
     .boxSkills{
-        height: 7.54rem;
+        height: 4.6rem;
     }
 
     .boxOmMig{

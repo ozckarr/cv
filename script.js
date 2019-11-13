@@ -140,7 +140,27 @@ const secretCode = 'potatis';
 
 
 
-  /**Bosse banan */
+  /**Mobile Meny resize */
+  document.querySelector('.boxKontakt').addEventListener("click", reziseBoxKontakt);
 
+  function reziseBoxKontakt(){
+    if (window.innerWidth <= 768) {
+      document.querySelector('.boxKontakt').style.height = "14rem";
+      document.querySelector('.boxKontakt .hideInMobile').style.display = "block";
+    }
 
+  }
 
+  document.querySelector('.boxOmMig').addEventListener("click", reziseboxOmMig);
+
+  function reziseboxOmMig(){
+    if (window.innerWidth <= 768) {
+      document.querySelector('.boxOmMig').style.height = "42.5rem";
+      document.querySelector('.boxOmMig .hideInMobile').style.display = "block";
+    }
+
+  }
+
+  window.addEventListener('resize', function() {
+    console.log(window.innerWidth)
+  })
