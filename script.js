@@ -247,15 +247,6 @@ const secretCode = 'potatis';
  const boxJobbHidden = document.querySelector('.boxJobb .hideInMobile');
  const boxJobbDownButton = document.querySelector('.boxJobb .downToggleButton');
  const boxJobbUpButton = document.querySelector('.boxJobb .upToggleButton');
-/*
- boxJobb.addEventListener("click", function() {
-    if (window.innerWidth <= 767) {
-      boxJobb.style.height = "27rem";
-      boxJobbHidden.style.display = "block";
-      boxJobbDownButton.style.display = "none";
-      boxJobbUpButton.style.display = "inline-block";
-    }
-  });*/
 
   boxJobb.addEventListener("click", function() {
     if (window.innerWidth <= 767) {
