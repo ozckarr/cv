@@ -1,0 +1,129 @@
+@media(min-width: 48rem){
+    main {
+        width: 46rem;
+    }
+
+    .box{
+        width: 44rem;
+        background-size: 44rem;
+        height: 30rem;
+    }
+
+    .box{
+        width: 44rem;
+        background-size: 44rem;
+        height: 30rem;
+    }
+
+    .downToggleButton, .upToggleButton{
+        display: none;
+    }
+
+    .boxOskarLogo, .boxProjekt {
+        width: 44rem;
+        height: 6rem;
+    }
+
+    .boxSkills {
+        width: 42rem;
+        height: 6rem;
+    }
+
+    .boxSkills img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .boxKontakt, .boxBild, .boxUtbildning, .boxJobb{
+        width: 18.4rem;
+    }
+
+    .boxKontakt{
+        height: 17rem;
+    }
+
+    .boxKontakt .hideInMobile, .boxJobb .hideInMobile, .boxUtbildning .hideInMobile{
+        display: block;
+    }
+
+    .buttonDownMobile{
+        display: none;
+    }
+
+    .boxUtbildning{
+        height: 14rem;
+    }
+
+    .boxJobb{
+        height: 29rem;
+    }
+
+    .boxOskarLogo img{
+        width: 43rem;
+        height: 5rem;
+    }
+    .boxProjekt img{
+        width: 25rem;
+        height: 5rem;
+    }
+
+    .textbox{
+        width: 30%;
+    }
+
+    .boxBild{
+        display: block;
+        height: 27rem;
+        background-image: url('./images/bildOskar2.jpg');
+        background-size: 19rem;
+    }
+
+    .boxOmMig{
+        width: 42rem;
+        height: 16rem;
+    }
+
+    .boxOmMig .hideInMobile{
+        display: block;
+    }
+
+    .boxUtbildningbackground{
+        background-size: 18.5rem 12.5rem;
+        background-image: url('./images/thinkbubble.png');
+        background-repeat: no-repeat;
+    }
+
+    .boxJobbbackground{
+        background-size: 18.5rem 27rem;
+            background-image: url('./images/bubble_bang.png');
+            background-repeat: no-repeat;
+        }
+    
+    .boxKontaktbackground{
+        background-size: 18.5rem 12.5rem;
+        background-image: url('./images/bubble.png');
+        background-repeat: no-repeat;
+        
+    }
+
+
+    .gridStructure{
+        display: grid;
+        grid-template-areas:
+        "boxOskarLogo boxOskarLogo"
+        "boxOmMig boxOmMig"
+        "boxUtbildning boxBild"
+        "boxJobb boxBild"
+        "boxJobb boxKontakt"
+        "boxSkills boxSkills"
+        "boxProjekt boxProjekt"
+        "boxKuritorn boxKuritorn"
+        "boxAlingsas boxAlingsas" 
+        "boxRimlikt boxRimlikt" 
+        "boxVilsekomna boxVilsekomna"
+        "boxPotatamon boxPotatamon"
+        "boxLjudbok boxLjudbok"
+        ;
+    }
+
+}

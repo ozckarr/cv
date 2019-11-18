@@ -1,5 +1,5 @@
 /**
- * When the user enters "potato", Potato-mode is activated. 
+ * When the user enters "potatis"(anywhere), Potato-mode is activated. 
  */
 const pressed = [];
 const secretCode = 'potatis';
@@ -140,45 +140,68 @@ const secretCode = 'potatis';
 
 
 
+
+
   /**
   * @param {string} boxKontakt - Control boxKontakt div
-  * @param {string} boxKontakt - Control the hidden content in boxKontakt div
+  * @param {string} boxKontaktHidden - Control the hidden content in boxKontakt div
+  * @param {string} boxKontaktDownButton - Control boxKontakt button pointing down
+  * @param {string} boxKontaktUpButton - Control boxKontakt button pointing up
   */
-  const boxKontakt = document.querySelector('.boxKontakt');
-  const boxKontaktHidden = document.querySelector('.boxKontakt .hideInMobile');
+ const boxKontakt = document.querySelector('.boxKontakt');
+ const boxKontaktHidden = document.querySelector('.boxKontakt .hideInMobile');
+ const boxKontaktDownButton = document.querySelector('.boxOmMig .downToggleButton');
+ const boxKontaktUpButton = document.querySelector('.boxOmMig .upToggleButton');
 
-  boxKontakt.addEventListener("click", function() {
+ boxKontakt.addEventListener("click", function() {
     if (window.innerWidth <= 767) {
       boxKontakt.style.height = "14rem";
       boxKontaktHidden.style.display = "block";
+      boxKontaktDownButton.style.display = "none";
+      boxKontaktUpButton.style.display = "inline-block";
     }
   });
 
   /**
   * @param {string} boxOmMig - Control boxOmMig div
   * @param {string} boxOmMigHidden - Control the hidden content in boxOmMig div
+  * @param {string} boxJobbDownButton - Control boxJobb button pointing down
+  * @param {string} boxOmMigUpButton - Control boxJobb button pointing up
   */
  const boxOmMig = document.querySelector('.boxOmMig');
  const boxOmMigHidden = document.querySelector('.boxOmMig .hideInMobile');
+ const boxOmMigDownButton = document.querySelector('.boxOmMig .downToggleButton');
+ const boxOmMigUpButton = document.querySelector('.boxOmMig .upToggleButton');
+
 
   boxOmMig.addEventListener("click", function() {
     if (window.innerWidth <= 767) {
       boxOmMig.style.height = "42.5rem";
       boxOmMigHidden.style.display = "block";
+      boxOmMigDownButton.style.display = "none";
+      boxOmMigUpButton.style.display = "inline-block";
     }
   });
+
 
   /**
   * @param {string} boxUtbildning - Control boxUtbildning div
   * @param {string} boxUtbildningHidden - Control the hidden content in boxUtbildning div
+  * @param {string} boxUtbildningDownButton - Control boxJobb button pointing down
+  * @param {string} boxUtbildningUpButton - Control boxJobb button pointing up
   */
+
  const boxUtbildning = document.querySelector('.boxUtbildning');
  const boxUtbildningHidden = document.querySelector('.boxUtbildning .hideInMobile');
+ const boxUtbildningDownButton = document.querySelector('.boxUtbildning .downToggleButton');
+ const boxUtbildningUpButton = document.querySelector('.boxUtbildning .upToggleButton');
 
  boxUtbildning.addEventListener("click", function() {
     if (window.innerWidth <= 767) {
-      boxUtbildning.style.height = "17rem";
-      boxUtbildningHidden.style.display = "block";
+        boxUtbildning.style.height = "17rem";
+        boxUtbildningHidden.style.display = "block";
+        boxUtbildningDownButton.style.display = "none";
+        boxUtbildningUpButton.style.display = "inline-block";
     }
   });
 
@@ -186,55 +209,63 @@ const secretCode = 'potatis';
   /**
   * @param {string} boxJobb - Control boxJobb div
   * @param {string} boxJobbHidden - Control the hidden content in boxJobb div
+  * @param {string} boxJobbDownButton - Control boxJobb button pointing down
+  * @param {string} boxJobbUpButton - Control boxJobb button pointing up
   */
  const boxJobb = document.querySelector('.boxJobb');
  const boxJobbHidden = document.querySelector('.boxJobb .hideInMobile');
+ const boxJobbDownButton = document.querySelector('.boxJobb .downToggleButton');
+ const boxJobbUpButton = document.querySelector('.boxJobb .upToggleButton');
 
  boxJobb.addEventListener("click", function() {
     if (window.innerWidth <= 767) {
       boxJobb.style.height = "27rem";
       boxJobbHidden.style.display = "block";
+      boxJobbDownButton.style.display = "none";
+      boxJobbUpButton.style.display = "inline-block";
     }
   });
 
 
 
-  /**
-   * 
-   * ELSE IF SOM ELSE med samma content
-   * 
-   * 
-   */
-  window.addEventListener('resize', function() {
-    if(window.innerWidth >= 768 && window.innerWidth <= 991) {
-      boxKontakt.style.height = "17rem;";
-      dboxKontaktHidden.style.display = "block";
-      boxOmMig.style.height = "16rem";
-      boxOmMigHidden.style.display = "block";
-      boxUtbildning.style.height = "14rem";
-      boxUtbildningHidden.style.display = "block";
-      boxJobb.style.height = "29rem";
-      boxJobbHidden.style.display = "block";
 
-    }else if(window.innerWidth >= 992 && window.innerWidth <= 1199){
-      boxKontakt.style.height = "17rem;";
-      boxOmMig.style.height = "15rem";
-      boxUtbildning.style.height = "17rem";
-      boxJobb.style.height = "17rem";
-    }else if(window.innerWidth >= 1200){
-      boxKontakt.style.height = "15rem;";
-      boxOmMig.style.height = "16rem";
-      boxUtbildning.style.height = "15rem";
-      boxJobb.style.height = "16rem";
-    } else{
+  window.addEventListener('resize', function() {
+  if(window.innerWidth <= 767){
       boxKontakt.style.height = "1.5rem";
-      dboxKontaktHidden.style.display = "none";
+      boxKontaktHidden.style.display = "none";
       boxOmMig.style.height = "1.5rem";
       boxOmMigHidden.style.display = "none";
       boxUtbildning.style.height = "1.5rem";
       boxUtbildningHidden.style.display = "none";
       boxJobb.style.height = "1.5rem";
       boxJobbHidden.style.display = "none";
-  }
+  }if(window.innerWidth >= 768 && window.innerWidth <= 991) {
+      boxKontakt.style.height = "17rem;";
+      boxKontaktHidden.style.display = "block";
+      boxOmMig.style.height = "16rem";
+      boxOmMigHidden.style.display = "block";
+      boxUtbildning.style.height = "14rem";
+      boxUtbildningHidden.style.display = "block";
+      boxJobb.style.height = "29rem";
+      boxJobbHidden.style.display = "block";
+    }else if(window.innerWidth >= 992 && window.innerWidth <= 1199){
+      boxKontakt.style.height = "17rem;";
+      boxKontaktHidden.style.display = "block";
+      boxOmMig.style.height = "15rem";
+      boxOmMigHidden.style.display = "block";
+      boxUtbildning.style.height = "17rem";
+      boxUtbildningHidden.style.display = "block";
+      boxJobb.style.height = "17rem";
+      boxJobbHidden.style.display = "block";
+    }else if(window.innerWidth >= 1200){
+      boxKontakt.style.height = "15rem;";
+      boxKontaktHidden.style.display = "block";
+      boxOmMig.style.height = "16rem";
+      boxOmMigHidden.style.display = "block";
+      boxUtbildning.style.height = "15rem";
+      boxUtbildningHidden.style.display = "block";
+      boxJobb.style.height = "16rem";
+      boxJobbHidden.style.display = "block";
+    }
   }
   )

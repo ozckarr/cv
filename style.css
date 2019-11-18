@@ -13,11 +13,11 @@ body {
 }
 
 main {
-    width: 19rem;
+    width: 19.5rem;
     background-color: #ffffff;
     border: #000000 solid 0.2rem;
     margin: 1rem auto;
-    padding: 1.2rem;
+    padding: 0.6rem 4rem 0.6rem 0.6rem;
 }
 
 .largetextbox{
@@ -26,24 +26,35 @@ main {
 
 .box, .boxKontakt, .boxOmMig, .boxBild, .boxUtbildning, .boxJobb{
     border: #000000 solid 0.2rem;
-    width: 16rem;
+    width: 18rem;
     height: 11rem;
-    background-size: 16rem;
+    background-size: 18rem;
     object-fit: cover;
 }
 
+.box{
+    width: 20rem;;
+}
+
+.downToggleButton{
+    display: inline-block;
+}
+
+.upToggleButton{
+    display: none;
+}
 
 .boxOskarLogo, .boxProjekt {
     border: #000000 solid 0.2rem;
     background-image: url('./images/background.png');
     background-repeat: repeat;
     background-size: 0.2rem;
-    width: 16rem;
+    width: 19.9rem;
     height: 3.5rem;
 }
 
 .boxKontakt{
-    width: 14rem;
+    width: 18rem;
     height: 1.5rem;
     background-image: url('./images/background.png');
     background-repeat: repeat;
@@ -60,7 +71,7 @@ main {
     background-repeat: repeat;
     background-size: 0.2rem;
     height: 1.5rem;
-    width: 14rem;
+    width: 18rem;
     background-image: url('./images/background.png');
     background-repeat: repeat;
     background-size: 0.27rem;
@@ -75,7 +86,7 @@ main {
     background-repeat: repeat;
     background-size: 0.2rem;
     height: 3rem;
-    width: 14rem;
+    width: 18rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -87,7 +98,7 @@ main {
 }
 
 .boxUtbildning{
-    width: 14rem;
+    width: 18rem;
     height: 1.5rem;
     background-image: url('./images/background.png');
     background-repeat: repeat;
@@ -104,7 +115,7 @@ main {
 
 
 .boxJobb{
-    width: 14rem;
+    width: 18rem;
     height: 1.5rem;
     background-image: url('./images/background-02.png');
     background-repeat: repeat;
