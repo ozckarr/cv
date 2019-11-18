@@ -153,14 +153,26 @@ const secretCode = 'potatis';
  const boxKontaktDownButton = document.querySelector('.boxOmMig .downToggleButton');
  const boxKontaktUpButton = document.querySelector('.boxOmMig .upToggleButton');
 
- boxKontakt.addEventListener("click", function() {
+
+  boxKontakt.addEventListener("click", function() {
     if (window.innerWidth <= 767) {
       boxKontakt.style.height = "14rem";
-      boxKontaktHidden.style.display = "block";
       boxKontaktDownButton.style.display = "none";
       boxKontaktUpButton.style.display = "inline-block";
+      setTimeout(function(){ boxKontaktHidden.style.display = "block"; }, 1);
     }
   });
+  boxKontakt.addEventListener("click", function() {
+    if (window.innerWidth <= 767 &&  boxKontaktHidden.style.display == "block") {
+      boxKontakt.style.height = "1.5rem";
+      setTimeout(function(){ boxKontaktHidden.style.display = "none"; }, 1);
+      boxKontaktDownButton.style.display = "inline-block";
+      boxKontaktUpButton.style.display = "none";
+    }
+  });
+
+
+
 
   /**
   * @param {string} boxOmMig - Control boxOmMig div
@@ -177,11 +189,21 @@ const secretCode = 'potatis';
   boxOmMig.addEventListener("click", function() {
     if (window.innerWidth <= 767) {
       boxOmMig.style.height = "42.5rem";
-      boxOmMigHidden.style.display = "block";
       boxOmMigDownButton.style.display = "none";
       boxOmMigUpButton.style.display = "inline-block";
+      setTimeout(function(){ boxOmMigHidden.style.display = "block"; }, 1);
     }
   });
+  boxOmMig.addEventListener("click", function() {
+    if (window.innerWidth <= 767 &&  boxOmMigHidden.style.display == "block") {
+      boxOmMig.style.height = "1.5rem";
+      setTimeout(function(){ boxOmMigHidden.style.display = "none"; }, 1);
+      boxOmMigDownButton.style.display = "inline-block";
+      boxOmMigUpButton.style.display = "none";
+    }
+  });
+
+
 
 
   /**
@@ -196,14 +218,23 @@ const secretCode = 'potatis';
  const boxUtbildningDownButton = document.querySelector('.boxUtbildning .downToggleButton');
  const boxUtbildningUpButton = document.querySelector('.boxUtbildning .upToggleButton');
 
- boxUtbildning.addEventListener("click", function() {
+  boxUtbildning.addEventListener("click", function() {
     if (window.innerWidth <= 767) {
-        boxUtbildning.style.height = "17rem";
-        boxUtbildningHidden.style.display = "block";
-        boxUtbildningDownButton.style.display = "none";
-        boxUtbildningUpButton.style.display = "inline-block";
+      boxUtbildning.style.height = "17rem";
+      boxUtbildningDownButton.style.display = "none";
+      boxUtbildningUpButton.style.display = "inline-block";
+      setTimeout(function(){ boxUtbildningHidden.style.display = "block"; }, 1);
     }
   });
+  boxUtbildning.addEventListener("click", function() {
+    if (window.innerWidth <= 767 &&  boxUtbildningHidden.style.display == "block") {
+      boxUtbildning.style.height = "1.5rem";
+      setTimeout(function(){ boxUtbildningHidden.style.display = "none"; }, 1);
+      boxUtbildningDownButton.style.display = "inline-block";
+      boxUtbildningUpButton.style.display = "none";
+    }
+  });
+  
 
 
   /**
@@ -216,7 +247,7 @@ const secretCode = 'potatis';
  const boxJobbHidden = document.querySelector('.boxJobb .hideInMobile');
  const boxJobbDownButton = document.querySelector('.boxJobb .downToggleButton');
  const boxJobbUpButton = document.querySelector('.boxJobb .upToggleButton');
-
+/*
  boxJobb.addEventListener("click", function() {
     if (window.innerWidth <= 767) {
       boxJobb.style.height = "27rem";
@@ -224,10 +255,29 @@ const secretCode = 'potatis';
       boxJobbDownButton.style.display = "none";
       boxJobbUpButton.style.display = "inline-block";
     }
+  });*/
+
+  boxJobb.addEventListener("click", function() {
+    if (window.innerWidth <= 767) {
+      boxJobb.style.height = "27rem";
+      boxJobbDownButton.style.display = "none";
+      boxJobbUpButton.style.display = "inline-block";
+      setTimeout(function(){ boxJobbHidden.style.display = "block"; }, 1);
+    }
+  });
+  boxJobb.addEventListener("click", function() {
+    if (window.innerWidth <= 767 &&  boxJobbHidden.style.display == "block") {
+      boxJobb.style.height = "1.5rem";
+      setTimeout(function(){ boxJobbHidden.style.display = "none"; }, 1);
+      boxJobbDownButton.style.display = "inline-block";
+      boxJobbUpButton.style.display = "none";
+    }
   });
 
-
-
+/**TODO boxJobbDownButton.style.display = "none";
+      boxJobbUpButton.style.display = "none"; 
+  redo kontakt
+      */
 
   window.addEventListener('resize', function() {
   if(window.innerWidth <= 767){
