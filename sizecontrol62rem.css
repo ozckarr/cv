@@ -1,5 +1,15 @@
+/*
+    Index - 62rem
+    ------
+    miscellaneous
+    boxOskarLogo - boxProjekt - boxSkills
+    boxKontakt
+    boxOmMig
+    boxUtbildning - boxJobb
+    boxBild
+*/
 
-@media(min-width: 62rem){                           /*62rem*/
+@media(min-width: 62rem){
     main {
         width: 60rem;
     }
@@ -10,8 +20,63 @@
         background-size: 28.5rem;
     }
 
+    .boxOskarLogo, .boxProjekt, .boxSkills { /*Styles .boxOskarLogo, .boxProjekt, .boxSkills*/
+        width: 59rem;
+    }
+    .boxOskarLogo img{
+        position: relative;
+        top: 0.5rem;
+        left: 2rem;
+    }
+    .boxProjekt img{
+        position: relative;
+        top: 0.5rem;
+        left: 2rem;
+    }
+    .boxSkills{
+        height: 4.4rem;
+        width: 26.6rem;
+    }
 
-    .gridStructure{
+    .boxKontakt{                         /*Styles kontakt in 62rem*/
+        height: 17rem;
+        width: 26.6rem;
+    }
+    .boxKontaktbackground{
+        background-size: 26rem 13.5rem;
+    }
+
+    .boxOmMig{                        /*Styles omMig in 62rem*/
+        width: 56.8rem;
+        height: 15rem;
+    }
+
+    .boxUtbildning, .boxJobb{       /*Styles boxUtbildning and boxJobb in 62rem*/
+        width: 26.6rem;
+        height: 17rem;
+    }
+    .boxUtbildningbackground{
+        background-size: 26rem 12rem;
+    }
+    .boxJobbbackground{
+        background-size: 26rem 15rem;
+    }
+    .breakrow{/*control breakrows in boxjobb*/
+        display: none;
+    }
+
+
+    .boxBild{                       /*Styles boxBild in 62rem*/
+        background-image: url('./images/bildOskar3.jpg');
+        width: 28.5rem;
+        background-size: 33rem;
+    }
+
+    .textbox{                      /*Resizes the textbox for 62rem*/
+        width: 43%;
+    }
+
+    .gridStructure{                 /*Restructure for 62rem*/
         grid-template-areas: 
         "boxOskarLogo boxOskarLogo"
         "boxKontakt boxBild"
@@ -24,67 +89,5 @@
         "boxLjudbok boxPotatamon"
         ;
         gap: 1.2rem 0.5rem;
-    }
-
-    .boxKontakt{
-        height: 17rem;
-    }
-
-
-    .boxOskarLogo, .boxProjekt, .boxSkills {
-        width: 59rem;
-    }
-
-    .boxOskarLogo img{
-        position: relative;
-        top: 0.5rem;
-        left: 2rem;
-    }
-
-    .boxProjekt img{
-        position: relative;
-        top: 0.5rem;
-        left: 2rem;
-    }
-
-    .textbox{
-        width: 43%;
-    }
-    .boxBild{
-        background-image: url('./images/bildOskar3.jpg');
-        width: 28.5rem;
-        background-size: 27rem;
-    }
-
-
-    .boxKontakt, .boxUtbildning, .boxJobb, .boxSkills{
-        width: 26.6rem;
-    }
-
-    .boxSkills{
-        height: 4.4rem;
-    }
-
-    .boxOmMig{
-        width: 56.8rem;
-        height: 15rem;
-    }
-
-    .breakrow{
-        display: none;
-    }
-
-    .boxUtbildning .boxJobb{
-        height: 16rem;
-    }
-
-    .boxUtbildningbackground{
-        background-size: 26rem 12rem;
-    }
-    .boxJobbbackground{
-        background-size: 26rem 15rem;
-    }
-    .boxKontaktbackground{
-        background-size: 26rem 13.5rem;
     }
 }

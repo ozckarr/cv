@@ -1,6 +1,16 @@
+/*
+    Index - 75rem
+    ------
+    miscellaneous
+    boxOskarLogo - boxProjekt - boxSkills
+    boxKontakt
+    boxOmMig
+    boxUtbildning
+    boxJobb
+    boxBild
+*/
 
-
-@media(min-width: 75rem){                           /*75rem*/
+@media(min-width: 75rem){
     main {
         width: 73rem;
     }
@@ -10,7 +20,48 @@
         background-size: 23rem;
     }
 
-    .gridStructure{
+    .boxOskarLogo, .boxProjekt{           /*Styles boxOskarLogo,boxSkills and boxProjekt in 75rem*/
+        width: 71.9rem;
+    }
+    .boxSkills{
+        width: 45.4rem;
+        height: 6.6rem;
+    }
+    .boxKontakt{           /*Styles boxKontakt in 75rem*/
+        width: 20.8rem; 
+        height: 15rem;
+    }
+    .boxKontaktbackground{ 
+        background-size: 20rem 13.5rem;
+    }
+    .boxOmMig{           /*Styles boxOmMig in 75rem*/
+        width: 45.3rem;
+        height: 16rem;
+    }
+    .boxUtbildning{           /*Styles boxUtbildning in 75rem*/
+        width: 20.8rem; 
+        height: 15rem;
+    }
+    .boxUtbildningbackground{ 
+        background-size: 20rem 12.5rem;
+    }
+    .boxJobb{           /*Styles boxJobb in 75rem*/
+        width: 21rem;
+        height: 16rem;
+    }
+    .boxJobbbackground{
+        background-size: 20rem 15rem;
+    }
+    .boxBild{           /*Styles boxBild in 75rem*/
+        background-size: 24rem;
+        width: 22.8rem;
+    }
+
+    .textbox{
+        width: 39%;
+    }
+
+    .gridStructure{         /*Restructure for 75rem*/
         display: grid;
         grid-template-areas: 
         "boxOskarLogo boxOskarLogo boxOskarLogo"
@@ -22,49 +73,6 @@
         "boxProjekt boxProjekt boxProjekt"
         "boxKuritorn boxAlingsas boxRimlikt"
         "boxPotatamon boxVilsekomna boxLjudbok"
-
         ;
-    }
-
-    .boxOskarLogo, .boxProjekt{
-        width: 71.9rem;
-    }
-    .textbox{
-        width: 39%;
-    }
-    .boxBild{
-        background-size: 22rem;
-        width: 22.8rem;
-    }
-
-    .boxJobb{
-        width: 21rem;
-        height: 16rem;
-    }
-
-    .boxSkills{
-        width: 45.4rem;
-        height: 6.6rem;
-    }
-
-    .boxOmMig{
-        width: 45.3rem;
-        height: 16rem;
-
-    }
-
-    .boxKontakt, .boxUtbildning{
-        width: 20.8rem; 
-        height: 15rem;
-    }
-
-    .boxUtbildningbackground{
-        background-size: 20rem 12.5rem;
-    }
-    .boxJobbbackground{
-        background-size: 20rem 15rem;
-    }
-    .boxKontaktbackground{
-        background-size: 20rem 13.5rem;
     }
 }

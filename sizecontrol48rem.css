@@ -1,3 +1,22 @@
+/*
+    Index - 48rem
+    ------
+    miscellaneous
+    boxOskarLogo - boxProjekt
+    boxKontakt
+    boxOmMig
+    boxSkills
+    boxUtbildning
+    boxJobb
+    boxBild
+    boxKuritorn
+    boxAlingsas 
+    boxRimlikt 
+    boxVilsekomna
+    boxPotatamon
+    boxLjudbok
+*/
+
 @media(min-width: 48rem){
     main {
         width: 46rem;
@@ -10,54 +29,19 @@
         height: 30rem;
     }
 
-    .box{
-        width: 44rem;
-        background-size: 44rem;
-        height: 30rem;
-    }
-
-    .downToggleButton, .upToggleButton{
+    .downToggleButton, .upToggleButton{ /*Hides the buttons*/
         display: none;
     }
 
-    .boxOskarLogo, .boxProjekt {
-        width: 44rem;
-        height: 6rem;
-    }
-
-    .boxSkills {
-        width: 42rem;
-        height: 6rem;
-    }
-
-    .boxSkills img{
-        width: 3rem;
-        height: 3rem;
-    }
-
-     .boxBild, .boxUtbildning, .boxJobb{
-        width: 18.4rem;
-    }
-
-    .boxKontakt{
-        height: 17rem;
-        width: 19rem;
-    }
-
-    .boxKontakt .hideInMobile, .boxJobb .hideInMobile, .boxUtbildning .hideInMobile{
+    .boxKontakt .hideInMobile, .boxJobb .hideInMobile, .boxUtbildning .hideInMobile{ /*Shows things hidden in mobile-version*/
         display: block;
     }
 
-    .buttonDownMobile{
-        display: none;
-    }
 
-    .boxUtbildning{
-        height: 14rem;
-    }
 
-    .boxJobb{
-        height: 29rem;
+    .boxOskarLogo, .boxProjekt {    /*Styles boxOskarLogo and boxProjekt*/
+        width: 44rem;
+        height: 6rem;
     }
 
     .boxOskarLogo img{
@@ -69,24 +53,37 @@
         height: 5rem;
     }
 
-    .textbox{
-        width: 30%;
+    .boxKontakt{                 /*Styles boxKontakt for 48rem, boxKontaktbackground is shown*/
+        height: 17rem;
+        width: 19rem;
+    }
+    .boxKontaktbackground{
+        background-size: 18.5rem 12.5rem;
+        background-image: url('./images/bubble.png');
+        background-repeat: no-repeat;
     }
 
-    .boxBild{
-        display: block;
-        height: 27rem;
-        background-image: url('./images/bildOskar2.jpg');
-        background-size: 19rem;
-    }
-
-    .boxOmMig{
+    .boxOmMig{                  /*Styles boxOmMig for 48rem*/
         width: 42rem;
         height: 16rem;
     }
-
     .boxOmMig .hideInMobile{
         display: block;
+    }
+
+
+    .boxSkills {                /*Styles boxSkills for 48rem*/
+        width: 42rem;
+        height: 6rem;
+    }
+    .boxSkills img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .boxUtbildning{             /*Styles boxUtbildning for 48rem, boxUtbildningbackground is shown*/
+        height: 14rem;
+        width: 18.4rem;
     }
 
     .boxUtbildningbackground{
@@ -95,21 +92,31 @@
         background-repeat: no-repeat;
     }
 
+
+    .boxJobb{               /*Styles boxJobb for 48rem, boxJobbbackground is shown*/
+        height: 29rem;
+        width: 18.4rem;
+    }
     .boxJobbbackground{
         background-size: 18.5rem 27rem;
             background-image: url('./images/bubble_bang.png');
             background-repeat: no-repeat;
-        }
-    
-    .boxKontaktbackground{
-        background-size: 18.5rem 12.5rem;
-        background-image: url('./images/bubble.png');
-        background-repeat: no-repeat;
-        
+    }
+
+    .boxBild{           /*Styles boxBild*/
+        display: block;
+        height: 27rem;
+        width: 20.8rem;
+        background-image: url('./images/bildOskar3.jpg');
+        background-size: 24rem;
+    }
+
+    .textbox{           /*Resizes the textbox for 48rem*/
+        width: 30%;
     }
 
 
-    .gridStructure{
+    .gridStructure{          /*Restructure for 48rem*/
         display: grid;
         grid-template-areas:
         "boxOskarLogo boxOskarLogo"

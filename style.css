@@ -1,4 +1,28 @@
-*{
+/*
+    Index
+    ------
+    miscellaneous
+    boxOskarLogo
+    boxKontakt
+    boxOmMig
+    boxSkills
+    boxUtbildning
+    boxJobb
+    boxBild
+    boxProjekt
+    boxKuritorn
+    boxAlingsas 
+    boxRimlikt 
+    boxVilsekomna
+    boxPotatamon
+    boxLjudbok
+    ----
+    Grid
+    upButton
+*/
+
+
+*{                      /*Removes default margin and padding. And add font*/
     margin: 0;
     padding: 0;
     font-family: 'Kalam', cursive;
@@ -6,13 +30,13 @@
 }
 
 
-body {
+body {                     /*Background only*/
     background-image: url('./images/background.png');
     background-repeat: repeat;
     background-size: 1rem;
 }
 
-main {
+main {                     /*Size and more for content background*/
     width: 19rem;
     background-color: #ffffff;
     border: #000000 solid 0.2rem;
@@ -20,27 +44,31 @@ main {
     padding: 0.6rem 2rem 0.6rem 0.6rem;
 }
 
-.largetextbox{
+.largetextbox{                    /*Padding, transition and border. In kontakt, omMig, utbildning, jobb*/
     padding: 1rem;
-}
-
-.box, .boxKontakt, .boxBild, .boxUtbildning, .boxJobb{
+    transition: height 0.3s;
     border: #000000 solid 0.2rem;
-    height: 11rem;
-    width: 20rem;;
-    background-size: 18rem;
-    object-fit: cover;
 }
 
-.downToggleButton{
+.downToggleButton{          /*Control the downToggleButton*/
     display: inline-block;
 }
 
-.upToggleButton{
+.upToggleButton{          /*Control the upToggleButton*/
     display: none;
 }
 
-.boxOskarLogo, .boxProjekt {
+
+.box, .boxBild{
+    border: #000000 solid 0.2rem;
+    height: 11rem;
+    width: 20rem;;
+    background-size: 20rem;
+    object-fit: cover;
+}
+
+
+.boxOskarLogo, .boxProjekt {    /*boxOskarLogo and boxProjekt control*/
     border: #000000 solid 0.2rem;
     background-image: url('./images/background.png');
     background-repeat: repeat;
@@ -49,36 +77,45 @@ main {
     height: 3.5rem;
 }
 
-.boxKontakt{
+.boxOskarLogo{
+    grid-area: boxOskarLogo;
+}
+
+.boxOskarLogo img{
+    height: 2.5rem;
+    margin: 0.3rem;
+}
+
+.boxKontakt{                    /*boxKontakt control*/
     width: 18rem;
     height: 1.5rem;
     background-image: url('./images/background.png');
     background-repeat: repeat;
     background-size: 0.15rem;
-    transition: height 0.3s;
+    grid-area: boxKontakt;
 }
 
 .boxKontakt .hideInMobile{
     display: none;
 }
 
-.boxOmMig{
-    border: #000000 solid 0.2rem;
+
+.boxOmMig{                      /*boxOmMig control*/
     background-image: url('./images/background.png');
     background-repeat: repeat;
     background-size: 0.2rem;
     height: 1.5rem;
     width: 18rem;
-    background-image: url('./images/background.png');
     background-repeat: repeat;
     background-size: 0.27rem;
-    transition: height 0.3s;
+    grid-area: boxOmMig;
+    
 }
 .boxOmMig .hideInMobile{
     display: none;
 }
 
-.boxSkills{
+.boxSkills{                      /*boxSkills control*/
     border: #000000 solid 0.2rem;
     background-image: url('./images/background-02.png');
     background-repeat: repeat;
@@ -88,6 +125,8 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    grid-area: boxSkills;
+    
 }
 
 .boxSkills img{
@@ -95,13 +134,13 @@ main {
     height: 2rem;
 }
 
-.boxUtbildning{
+.boxUtbildning{                 /*boxUtbildning control*/
     width: 18rem;
     height: 1.5rem;
     background-image: url('./images/background.png');
     background-repeat: repeat;
     background-size: 0.3rem;
-    transition: height 0.3s;
+    grid-area: boxUtbildning;
 }
 
 .boxUtbildning .hideInMobile{
@@ -113,14 +152,14 @@ main {
 }
 
 
-.boxJobb{
+.boxJobb{                     /*boxUtbildning control*/
     width: 18rem;
     height: 1.5rem;
     background-image: url('./images/background-02.png');
     background-repeat: repeat;
     background-size: 0.3rem;
     font-size: 1rem;
-    transition: height 0.3s;
+    grid-area: boxJobb;
 }
 
 .boxJobb .hideInMobile{
@@ -131,18 +170,21 @@ main {
     font-size: 1.1rem;
 }
 
-.boxOskarLogo img{
-    height: 2.5rem;
-    margin: 0.3rem;
-}
-
-.boxProjekt img{
+.boxProjekt img{                /*boxProjekt control(Also check with logo)*/ 
     height: 2.5rem;
     width: 10rem;
     margin: 0.3rem;
 }
+.boxProjekt{
+    grid-area: boxProjekt;
+}
 
-.textbox{
+.boxBild{                       /*boxBild control (not visible)*/
+    grid-area: boxBild;
+    display: none;
+}
+
+.textbox{                      /*Controls the textbox inside projekts*/
     position: relative;
     border: #000000 solid 0.2rem;
     background-image: url('./images/background.png');
@@ -154,67 +196,34 @@ main {
     width: 45%;
 }
 
-.boxOskarLogo{
-    grid-area: boxOskarLogo;
-}
-
-.boxKontakt{
-    grid-area: boxKontakt;
-    background-image: url('./images/background.png');
-}
-.boxOmMig{
-    grid-area: boxOmMig;
-    background-image: url('./images/background.png');
-}
-
-.boxBild{
-    grid-area: boxBild;
-    background-image: url('./images/bildOskar.jpg');
-    display: none;
-}
-
-.boxProjekt{
-    grid-area: boxProjekt;
-}
-
-.boxKuritorn{
+.boxKuritorn{               /*boxKuritorn control (mostly controlled by .box)*/
     grid-area: boxKuritorn;
     background-image: url('./images/kuritorn.jpg');
 }
 
-.boxAlingsas{
+.boxAlingsas{           /*boxAlingsas control (mostly controlled by .box)*/
     grid-area: boxAlingsas;
     background-image: url('./images/alingsas.jpg');
 }
-.boxRimlikt{
+.boxRimlikt{            /*boxRimlikt control (mostly controlled by .box)*/
     grid-area: boxRimlikt;
     background-image: url('./images/rimlikt.jpg');
 }
-.boxVilsekomna{
-    grid-area: boxVilsekomna;
+.boxVilsekomna{         /*boxVilsekomna control (mostly controlled by .box)*/
+    grid-area: boxVilsekomna; 
     background-image: url('./images/vilsekomna.jpg');
 }
-.boxPotatamon{
+.boxPotatamon{          /*boxPotatamon control (mostly controlled by .box)*/
     grid-area: boxPotatamon;
     background-image: url('./images/potatamon.jpg');
 }
-.boxLjudbok{
+.boxLjudbok{             /*boxLjudbok control (mostly controlled by .box)*/
     grid-area: boxLjudbok;
     background-image: url('./images/ljudbok.jpg');
 }
 
-.boxSkills{
-    grid-area: boxSkills;
-}
-.boxUtbildning{
-    grid-area: boxUtbildning;
-}
-.boxJobb{
-    grid-area: boxJobb;
-}
 
-
-.gridStructure{
+.gridStructure{           /*Structure(grid) of the site*/
     display: grid;
     grid-template-areas:
     "boxOskarLogo"
@@ -237,7 +246,7 @@ main {
 }
 
 
-#upButton{
+#upButton{                /*Styles the up-button that takes you to start*/
     display: none;
     position: fixed;
     bottom: 3%;
