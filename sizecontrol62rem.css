@@ -23,6 +23,7 @@
         "boxVilsekomna boxRimlikt"
         "boxLjudbok boxPotatamon"
         ;
+        gap: 1.2rem 0.5rem;
     }
 
     .boxKontakt{
@@ -61,11 +62,11 @@
     }
 
     .boxSkills{
-        height: 4.6rem;
+        height: 4.4rem;
     }
 
     .boxOmMig{
-        width: 57.1rem;
+        width: 56.8rem;
         height: 15rem;
     }
 
@@ -74,7 +75,7 @@
     }
 
     .boxUtbildning .boxJobb{
-        height: 17rem;
+        height: 16rem;
     }
 
     .boxUtbildningbackground{

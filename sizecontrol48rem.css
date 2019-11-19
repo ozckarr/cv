@@ -1,6 +1,7 @@
 @media(min-width: 48rem){
     main {
         width: 46rem;
+        padding: 1rem 0.4rem;
     }
 
     .box{
@@ -34,12 +35,13 @@
         height: 3rem;
     }
 
-    .boxKontakt, .boxBild, .boxUtbildning, .boxJobb{
+     .boxBild, .boxUtbildning, .boxJobb{
         width: 18.4rem;
     }
 
     .boxKontakt{
         height: 17rem;
+        width: 19rem;
     }
 
     .boxKontakt .hideInMobile, .boxJobb .hideInMobile, .boxUtbildning .hideInMobile{
