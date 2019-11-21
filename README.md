@@ -6,5 +6,8 @@ lightbox.css - control over styling of lightbox
 sizecontrol48rem.css - sizes for 48 rem >
 sizecontrol62rem.css - sizes for 62 rem >
 sizecontrol75rem.css - sizes for 75 rem >
-script.js - javascript
+mobile.js - controls sizing of clickable textboxes in mobile version
+script.js - Lightbox and upbutton
 images - image folder
+
+secret.js - Very secret...

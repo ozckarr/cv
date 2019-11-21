@@ -1,4 +1,4 @@
-#lightboxBackground{
+#lightboxBackground{ /*The background to the lightbox, made visible with JS*/
     background-image: url('./images/backgroundLightbox.png');
     background-repeat: repeat;
     background-size: 1rem;
@@ -12,20 +12,21 @@
     cursor: pointer;
 }
 
-.lightboxStyle{
+.lightboxStyle{ /*styling of the lightbox*/
     position: fixed;
     width: 17rem;
-    height: 33rem;
+    height: 32rem;
     background-image: url('./images/background.png');
     background-repeat: repeat;
     background-size: 0.2rem;
     top: 0.2rem;
+    font-size: 0.9rem;
     z-index: 90;
     border: #000000 solid 0.2rem;
     padding: 1.1rem;
 }
 
-.lightboxOffButton{
+.lightboxOffButton{ /*styling of the OFF-button in the lightbox*/
     height: 2rem;
     width: 2rem;
     position: absolute;
@@ -39,7 +40,7 @@
     cursor: pointer;
 }
 
-form{
+form{ /*Button styling of the links in the lightbox*/
     margin: auto;
     width: 14rem;
     display: flex;
@@ -55,14 +56,14 @@ form button{
     color: #1ba3aa;
 }
 
-.youtube{
+.youtube{ /*Youtube styling*/
     width: 16rem;
     height: 8rem;
     display: block;
 }
 
 
-.centerLightboxContent p{
+.centerLightboxContent p{ /*Centering all content in the lightbox*/
     display: block;
     margin: auto;
     padding: 1rem 0;
@@ -73,31 +74,13 @@ form button{
 }
 
 /*Turn off lightboxes*/
-#kuritornLightbox{
+#kuritornLightbox, #alingsasLightbox, #rimliktLightbox, #vilsekomnaLightbox, #potatomonLightbox, #ljudbokLightbox{
     display: none;
 }
 
-#alingsasLightbox{
-    display: none;
-}
 
-#rimliktLightbox{
-    display: none;
-}
-
-#vilsekomnaLightbox{
-    display: none;
-}
-
-#potatomonLightbox{
-    display: none;
-}
-
-#ljudbokLightbox{
-    display: none;
-}
-
-.imgLightbox{                       /*Funkar just nu bara i alingsås*/
+.imgLightbox{       /*Styling of images in the lightbox*/
+    display: block;
     background-size: 15.6rem;
     width: 15.6rem;
     height: 11rem;
@@ -116,12 +99,12 @@ form button{
     background-image: url('./images/screen_alingsas.png'); 
 }
 
-.imgLjudbokLightbox{ /*Overrides imgLightbox height. Don't change the order*/
+.imgLjudbokLightbox{ /*Overrides imgLightbox height. Don't change the order or put !important*/
     background-image: url('./images/screen_ljudbok.jpg');
     height: 5rem;
 }
 
-.instagramLightboxSmall{
+.instagramLightboxSmall{ /*instagram styling in mobile*/
     background-color: white;
     width: 100%;
     border: 0;
@@ -129,7 +112,7 @@ form button{
     display: block;
 }
 
-.instagramLightboxLarge{
+.instagramLightboxLarge{ /*Youtube styling in 48rem>*/
     background-color: white;
     width: 22rem;
     border: 0;
@@ -140,12 +123,13 @@ form button{
 
 
 
-/*Size*/
+/*Resizing for different screens*/
 @media(min-width: 48rem){
 
 
     .lightboxStyle{
         width: 44rem;
+        font-size: 1rem;
     }
     
     .lightboxOffButton{
