@@ -67,9 +67,11 @@
 
 
     .boxBild{                       /*Styles boxBild in 62rem*/
-        background-image: url('./images/bildOskar3.jpg');
+        background-image: url('./images/bildOskar62.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 28.5rem;
-        background-size: 33rem;
+        background-position: -10em 0;
     }
 
     .textbox{                      /*Resizes the textbox for 62rem*/

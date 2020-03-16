@@ -53,8 +53,10 @@
         background-size: 20rem 15rem;
     }
     .boxBild{           /*Styles boxBild in 75rem*/
-        background-size: 25rem;
+        background-image: url('./images/bildOskar75.jpg');
         width: 22.8rem;
+        background-size: cover;
+        background-position: -16em 0;
     }
 
     .textbox{
